@@ -1,0 +1,72 @@
+﻿@using EntityLayer.Concrete
+@model List<Category>
+@{
+    ViewBag.Title = "Statistic";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h2>Statistic</h2>
+
+
+<div class="col-md-6">
+    <div class="info-box">
+        <span class=" bg-gradient-gray"></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text"> Toplam Kategori Sayısı</span>
+            <span class="info-box-number">@ViewBag.deger1</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="col-md-6">
+    <div class="info-box">
+        <span class=" bg-fuchsia"></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text">Eğitim Kategorisindeki Başlık Sayısı</span>
+            <span class="info-box-number">@ViewBag.deger2</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="col-md-6">
+    <div class="info-box">
+        <span class=" bg-info"></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text">İçinde A-a Harfi Geçen Yazarlar</span>
+            <span class="info-box-number">@ViewBag.deger3</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="col-md-6">
+    <div class="info-box">
+        <span class=" bg-warning"></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text"> En Fazla Başlığı Olan Kategori</span>
+            <span class="info-box-number">@ViewBag.deger4</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="col-md-6">
+    <div class="info-box">
+        <span class=" bg-success"></span>
+
+        <div class="info-box-content">
+            <span class="info-box-text">  True-False Farkını Bul</span>
+            <span class="info-box-number">@ViewBag.deger5</span>
+        </div>
+
+    </div>
+
+</div>

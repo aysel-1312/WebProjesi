@@ -33,5 +33,21 @@ namespace BusinessLayer.Concrete
         {
             throw new NotImplementedException();
         }
+
+        public Category GetById(int id)
+        {
+            return _categorydal.Get(x => x.CategoryId == id);
+        }
+
+        public void CategoryDelete(Category category)
+        {
+            _categorydal.Delete(category); ;
+        }
+
+        public void CategoryUpdate(Category category)
+        {
+            _categorydal.Update(category);
+        }
+       
     }
 }
